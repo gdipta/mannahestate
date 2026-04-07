@@ -37,7 +37,7 @@ const PROPERTIES = [
     location: 'Uluwatu Cliffs',
     price: '$2,450,000',
     specs: '4 Beds • 5 Baths • 800 sqm',
-    image: 'https://images.unsplash.com/photo-1613490908578-75c65db3c3e2?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1570290870545-277c2f5ad465?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fG9ic2lkaWFuJTIwdmlsbGF8ZW58MHx8MHx8fDA%3D',
   },
   {
     id: 2,
