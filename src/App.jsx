@@ -85,10 +85,13 @@ export default function App() {
           isScrolled ? 'bg-[#0a0a0a]/90 backdrop-blur-md py-4 border-b border-stone-800' : 'bg-transparent py-6'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
-          <div className="text-2xl font-serif tracking-widest cursor-pointer" onClick={() => scrollTo('home')}>
-            MANNAH<span className="text-stone-500">.</span>
-          </div>
+        <div className="cursor-pointer" onClick={() => scrollTo('home')}>
+          <img
+            src="/logo_white.png"
+            alt="Mannah Logo"
+            className="h-10 w-auto object-contain"
+          />
+        </div>
           <div className="hidden md:flex space-x-8 text-sm uppercase tracking-widest text-stone-300">
             <button onClick={() => scrollTo('vision')} className="hover:text-white transition-colors">Vision</button>
             <button onClick={() => scrollTo('properties')} className="hover:text-white transition-colors">Properties</button>
