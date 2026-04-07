@@ -91,7 +91,6 @@ export default function App() {
             alt="Mannah Logo"
             className="h-10 w-auto object-contain"
           />
-        </div>
           <div className="hidden md:flex space-x-8 text-sm uppercase tracking-widest text-stone-300">
             <button onClick={() => scrollTo('vision')} className="hover:text-white transition-colors">Vision</button>
             <button onClick={() => scrollTo('properties')} className="hover:text-white transition-colors">Properties</button>
