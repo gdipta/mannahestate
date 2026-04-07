@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap');
+
+h1, h2, h3, .font-serif { font-family: 'Playfair Display', serif; }
+body, p, span, button, a { font-family: 'Inter', sans-serif; }
+
+.reveal-hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.image-hover-zoom { transition: transform 0.7s ease-in-out; }
+.group:hover .image-hover-zoom { transform: scale(1.05); }
