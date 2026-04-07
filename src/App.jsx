@@ -86,7 +86,7 @@ export default function App() {
           <div className="cursor-pointer flex-shrink-0" onClick={() => scrollTo('home')}>
             <img
               src="/logo_white.png"
-              alt="Mannah Logo"
+              alt="Staude Logo"
               className="h-8 w-auto object-contain block"
             />
           </div>
@@ -230,7 +230,7 @@ export default function App() {
               <div className="space-y-4">
                 <a href="#" className="flex items-center space-x-4 text-stone-400 hover:text-white transition-colors">
                   <Mail className="w-5 h-5" strokeWidth={1.5} />
-                  <span className="font-light">inquiries@mannah-realestate.com</span>
+                  <span className="font-light">inquiries@staudeproperty.com</span>
                 </a>
                 <a href="#" className="flex items-center space-x-4 text-stone-400 hover:text-white transition-colors">
                   <Phone className="w-5 h-5" strokeWidth={1.5} />
@@ -271,7 +271,7 @@ export default function App() {
 
           <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-stone-800 text-stone-600 text-sm">
             <div className="text-2xl font-serif tracking-widest text-stone-500 mb-4 md:mb-0">
-              MANNAH.
+              STAUDE.
             </div>
             <div className="flex space-x-6 mb-4 md:mb-0">
               <a href="#" className="hover:text-stone-300 transition-colors">Privacy</a>
@@ -279,7 +279,7 @@ export default function App() {
             </div>
             <div className="flex items-center space-x-4">
               <a href="#" className="hover:text-stone-300 transition-colors"><Instagram className="w-5 h-5" /></a>
-              <span>© {new Date().getFullYear()} MANNAH Real Estate</span>
+              <span>© {new Date().getFullYear()} STAUDE Property</span>
             </div>
           </div>
         </div>
