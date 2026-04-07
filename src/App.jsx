@@ -85,7 +85,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-row items-center justify-between">
           <div className="cursor-pointer flex-shrink-0" onClick={() => scrollTo('home')}>
             <img
-              src="/Logo_White.png"
+              src="/logo_white.png"
               alt="Mannah Logo"
               className="h-8 w-auto object-contain block"
             />
