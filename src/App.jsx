@@ -79,29 +79,32 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-[#f5f5f5] font-sans overflow-x-hidden selection:bg-stone-700 selection:text-white">
-      {/* Navigation */}
-      <nav
-        className={`fixed top-0 w-full z-50 transition-all duration-500 ${
-          isScrolled ? 'bg-[#0a0a0a]/90 backdrop-blur-md py-4 border-b border-stone-800' : 'bg-transparent py-6'
-        }`}
-      >
-        <div className="cursor-pointer" onClick={() => scrollTo('home')}>
-          <img
-            src="/logo_white.png"
-            alt="Mannah Logo"
-            className="h-10 w-auto object-contain"
-          />
-          <div className="hidden md:flex space-x-8 text-sm uppercase tracking-widest text-stone-300">
+      <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ${
+        isScrolled ? 'bg-[#0a0a0a]/90 backdrop-blur-md py-4 border-b border-stone-800' : 'bg-transparent py-6'
+      }`}>
+        <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-row items-center justify-between">
+          <div className="cursor-pointer flex-shrink-0" onClick={() => scrollTo('home')}>
+            <img
+              src="/Logo_White.png"
+              alt="Mannah Logo"
+              className="h-8 w-auto object-contain block"
+            />
+          </div>
+          {/* Nav Links */}
+          <div className="hidden md:flex flex-row items-center space-x-8 text-sm uppercase tracking-widest text-stone-300">
             <button onClick={() => scrollTo('vision')} className="hover:text-white transition-colors">Vision</button>
             <button onClick={() => scrollTo('properties')} className="hover:text-white transition-colors">Properties</button>
             <button onClick={() => scrollTo('lifestyle')} className="hover:text-white transition-colors">Lifestyle</button>
           </div>
-          <button onClick={() => scrollTo('contact')} className="border border-stone-600 px-5 py-2 text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-colors">
+          {/* CTA Button */}
+          <button
+            onClick={() => scrollTo('contact')}
+            className="flex-shrink-0 border border-stone-600 px-5 py-2 text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-colors"
+          >
             Inquire
           </button>
         </div>
       </nav>
-
       {/* Hero Section */}
       <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -112,7 +115,6 @@ export default function App() {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0a0a0a]/20 to-[#0a0a0a]"></div>
         </div>
-        
         <div className="relative z-10 text-center px-6 mt-20">
           <p className="text-stone-400 tracking-[0.3em] uppercase text-sm mb-6 animate-pulse">Reimagining Habitat</p>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif mb-8 max-w-5xl mx-auto leading-tight">
